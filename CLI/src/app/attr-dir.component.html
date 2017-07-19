@@ -12,6 +12,16 @@
 <input type="text" [(ngModel)]="Name">
 <input type="text" [(ngModel)]="Name">
 
+<h2>Custom Directive</h2>
+
+<div appHighlight>Custom Directive Content</div>
+
+<h2>NgIF</h2>
+<div *ngIf="switch">
+    Custom content</div>
+<button (click)="onSwitch()">Switch</button>
+<br>
+<br>
 
 <br>
 <h3 [ngStyle]="{color:'green','font-size':'50px'}">Srinivas</h3>
@@ -38,3 +48,10 @@
     <div>{{"Abc" | brackets:'u'}}</div>
         <div>{{"Abc" | brackets:'l'}}</div>
             <div>{{"Abc" | brackets:'b'}}</div>
+<br><br>
+<h2>Unless Directive</h2>
+ <p *myUnless="switch" >
+  Conditional text
+</p>
+<app-lifecycle></app-lifecycle>
+<test-log></test-log>

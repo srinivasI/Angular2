@@ -10,10 +10,13 @@ import { AttrDirComponent } from './attr-dir.component';
 import { InterestComponent } from './interest/interest.component';
 import { CuspipePipe } from './cuspipe.pipe';
 import { Pipe, PipeTransform } from '@angular/core';
-
+import { HighlightDirective } from './highlight.directive';
+import { UnlessDirective } from './unless.directive';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { LogServicesComponent } from './services/logservices.component';
 @NgModule({
-  declarations: [ CourseComponent, OtherComponent, AnotherComponent,AttrDirComponent, InterestComponent, CuspipePipe ],
+  declarations: [ CourseComponent, OtherComponent, AnotherComponent,AttrDirComponent, InterestComponent, CuspipePipe, HighlightDirective, UnlessDirective, LifecycleComponent, LogServicesComponent, ],
   imports: [ BrowserModule,FormsModule],
   bootstrap: [AttrDirComponent]
 })
-export class AppModule { }
+export class AppModule {}
